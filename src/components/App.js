@@ -1,12 +1,22 @@
-import React from 'react';
+import React from "react";
+import Location from "./Location.js";
+import MenuItem from "./MenuItem.js";
 
 class App extends React.Component {
-  render(){
+  render() {
     return (
       <div>
-        App will go here
+        <Location
+          locationName="Got Buns hun"
+          locationAddress="67, Hermitage road, Plymouth"
+        />
+        <MenuItem
+          menuItemId="1"
+          menuItemName="Cheeseburger"
+          menuItemPrice="£3"
+        />
       </div>
-    )
+    );
   }
 }
 
